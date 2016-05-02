@@ -39,8 +39,8 @@ struct mem_system_t
  * Global Variables
  */
 
-
 extern char *mem_report_file_name;
+
 
 #define mem_debugging() debug_status(mem_debug_category)
 #define mem_debug(...) debug(mem_debug_category, __VA_ARGS__)

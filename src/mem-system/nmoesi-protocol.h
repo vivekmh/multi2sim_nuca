@@ -102,7 +102,7 @@ extern int EV_MOD_NMOESI_MESSAGE_RECEIVE;
 extern int EV_MOD_NMOESI_MESSAGE_ACTION;
 extern int EV_MOD_NMOESI_MESSAGE_REPLY;
 extern int EV_MOD_NMOESI_MESSAGE_FINISH;
-
+extern int cache_to_cache_transfers;
 
 void mod_handler_nmoesi_find_and_lock(int event, void *data);
 void mod_handler_nmoesi_load(int event, void *data);

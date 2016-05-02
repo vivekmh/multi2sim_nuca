@@ -62,6 +62,7 @@ struct mod_t *mod_create(char *name, enum mod_kind_t kind, int num_ports,
 	mod->name = xstrdup(name);
 	mod->kind = kind;
 	mod->latency = latency;
+	mod->inval_counter = 0;
 
 	/* Ports */
 	mod->num_ports = num_ports;

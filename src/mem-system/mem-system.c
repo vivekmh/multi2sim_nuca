@@ -42,6 +42,7 @@ int mem_debug_category;
 int mem_trace_category;
 int mem_peer_transfers;
 
+
 /* Frequency domain, as returned by function 'esim_new_domain'. */
 int mem_frequency = 1000;
 int mem_domain_index;
@@ -354,6 +355,7 @@ void mem_system_dump_report(void)
 	fprintf(f, ";    BlockingReads, BlockingWrites, BlockingNCWrites - Reads/writes coming from lower-level cache\n");
 	fprintf(f, ";    NonBlockingReads, NonBlockingWrites, NonBlockingNCWrites - Coming from upper-level cache\n");
 	fprintf(f, "\n\n");
+	fprintf(f, "Cache-to-Cache Transfers = %d\n", cache_to_cache_transfers);
 	
 	/* Report for each cache */
 	for (i = 0; i < list_count(mem_system->mod_list); i++)
@@ -425,6 +427,7 @@ void mem_system_dump_report(void)
 		fprintf(f, "NoRetryNCWriteHits = %lld\n", mod->no_retry_nc_write_hits);
 		fprintf(f, "NoRetryNCWriteMisses = %lld\n", mod->no_retry_nc_writes
 			- mod->no_retry_nc_write_hits);
+		fprintf(f, "Number of invalidates = %lld\n", mod->inval_counter);
 		fprintf(f, "\n\n");
 	}
 

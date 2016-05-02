@@ -32,7 +32,7 @@
 #include "mem-system.h"
 #include "mod-stack.h"
 #include "prefetcher.h"
-
+#include <string.h>
 
 /* Events */
 
@@ -116,7 +116,7 @@ int EV_MOD_NMOESI_MESSAGE_ACTION;
 int EV_MOD_NMOESI_MESSAGE_REPLY;
 int EV_MOD_NMOESI_MESSAGE_FINISH;
 
-
+int cache_to_cache_transfers = 0;
 
 
 
@@ -1165,6 +1165,32 @@ void mod_handler_nmoesi_find_and_lock(int event, void *data)
 		 * Also, update LRU counters here. */
 		cache_set_transient_tag(mod->cache, stack->set, stack->way, stack->tag);
 		cache_access_block(mod->cache, stack->set, stack->way);
+		//VMH
+		struct mod_t *parent_mod;
+
+		/* Get high/parent module */
+		parent_mod = linked_list_get(mod->high_mod_list);
+
+		//Also update remote_flag here
+		if(stack->hit && !strncmp((const char*)(&mod->name),"mod-l2",6))
+		{
+			int len = strlen((const char*)(&mod->name));
+			int len_upper = strlen((const char*)(&parent_mod->name));
+
+			const char *last_two = (const char*)(&mod->name[len-2]);
+			const char *last_two_upper = (const char*)(&parent_mod->name[len_upper-2]);
+
+			if(strcmp(last_two,last_two_upper))
+				{
+				cache_to_cache_transfers++;
+				stack->remote_flag = 1;
+				}
+
+			printf("Mod name %s, Parent mod name %s remote_flag %d\n", mod->name, parent_mod->name,
+					stack->remote_flag);
+		}
+		//VMH
+
 
 		/* Access latency */
 		esim_schedule_event(EV_MOD_NMOESI_FIND_AND_LOCK_ACTION, stack, mod->dir_latency);
@@ -2728,6 +2754,7 @@ void mod_handler_nmoesi_invalidate(int event, void *data)
 			for (i = 0; i < dir->num_nodes; i++)
 			{
 				struct net_node_t *node;
+				mod->inval_counter++;
 				
 				/* Skip non-sharers and 'except_mod' */
 				if (!dir_entry_is_sharer(dir, stack->set, stack->way, z, i))

@@ -91,22 +91,22 @@ am____top_builddir__lib_libm2s_opencl_la_SOURCES_DIST = command.c \
 	even-partition-strategy.c even-partition-strategy.h \
 	relative-runtime-partition-strategy.c \
 	relative-runtime-partition-strategy.h x86-device-wi.s
-#am___top_builddir__lib_libm2s_opencl_la_OBJECTS =  \
-#	command.lo command-queue.lo context.lo \
-#	debug.lo device.lo elf-format.lo event.lo \
-#	evg-device.lo evg-kernel.lo evg-program.lo \
-#	list.lo mhandle.lo misc.lo program.lo \
-#	kernel.lo mem.lo object.lo opencl.lo \
-#	platform.lo sampler.lo si-device.lo \
-#	si-kernel.lo si-program.lo string.lo \
-#	thread-list.lo x86-device.lo x86-kernel.lo \
-#	x86-program.lo union-device.lo \
-#	union-kernel.lo union-program.lo \
-#	partition-strategy.lo partition-util.lo \
-#	partition-util-time.lo \
-#	even-partition-strategy.lo \
-#	relative-runtime-partition-strategy.lo \
-#	x86-device-wi.lo
+am___top_builddir__lib_libm2s_opencl_la_OBJECTS =  \
+	command.lo command-queue.lo context.lo \
+	debug.lo device.lo elf-format.lo event.lo \
+	evg-device.lo evg-kernel.lo evg-program.lo \
+	list.lo mhandle.lo misc.lo program.lo \
+	kernel.lo mem.lo object.lo opencl.lo \
+	platform.lo sampler.lo si-device.lo \
+	si-kernel.lo si-program.lo string.lo \
+	thread-list.lo x86-device.lo x86-kernel.lo \
+	x86-program.lo union-device.lo \
+	union-kernel.lo union-program.lo \
+	partition-strategy.lo partition-util.lo \
+	partition-util-time.lo \
+	even-partition-strategy.lo \
+	relative-runtime-partition-strategy.lo \
+	x86-device-wi.lo
 __top_builddir__lib_libm2s_opencl_la_OBJECTS =  \
 	$(am___top_builddir__lib_libm2s_opencl_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
@@ -117,8 +117,8 @@ __top_builddir__lib_libm2s_opencl_la_LINK = $(LIBTOOL) $(AM_V_lt) \
 	$(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(__top_builddir__lib_libm2s_opencl_la_LDFLAGS) $(LDFLAGS) -o \
 	$@
-#am___top_builddir__lib_libm2s_opencl_la_rpath =  \
-#	-rpath $(libdir)
+am___top_builddir__lib_libm2s_opencl_la_rpath =  \
+	-rpath $(libdir)
 am__dirstamp = $(am__leading_dot)dirstamp
 DEFAULT_INCLUDES = 
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -159,20 +159,20 @@ DIST_SOURCES =  \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/bharathi/tools/multi2sim-4.2/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/bharathi/tools/multi2sim-4.2/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/bharathi/tools/multi2sim-4.2/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/bharathi/tools/multi2sim-4.2/missing --run automake-1.11
-AWK = gawk
+AUTOCONF = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=gcc3
 CCASFLAGS = -g -O2
 CCDEPMODE = depmode=gcc3
-CFLAGS = -msse2 -O3 -std=gnu99 -DNDEBUG
+CFLAGS = -msse2 -Wall -Werror -DMHANDLE -g -O0 -std=gnu99 -Wno-error=deprecated-declarations
 CPP = gcc -E
 CPPFLAGS = 
 CXX = g++
@@ -181,7 +181,7 @@ CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
 DATADIR = ${prefix}/share
-DEFS = -DPACKAGE_NAME=\"multi2sim\" -DPACKAGE_TARNAME=\"multi2sim\" -DPACKAGE_VERSION=\"4.2\" -DPACKAGE_STRING=\"multi2sim\ 4.2\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"multi2sim\" -DVERSION=\"4.2\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_STDDEF_H=1 -DHAVE_STDINT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_SOCKET_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_UTIME_H=1 -DHAVE_ELF_H=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_UNISTD_H=1 -DHAVE_CHOWN=1 -DLSTAT_FOLLOWS_SLASHED_SYMLINK=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_ALARM=1 -DHAVE_BZERO=1 -DHAVE_FTRUNCATE=1 -DHAVE_GETCWD=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_MKDIR=1 -DHAVE_MUNMAP=1 -DHAVE_SELECT=1 -DHAVE_SOCKET=1 -DHAVE_STRCASECMP=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRTOL=1 -DHAVE_UTIME=1 -DHAVE_SSE4=1 -DHAVE_SYNC_BUILTINS=1 -DHAVE_OPENGL=1 -DYYTEXT_POINTER=1 -DHAVE_FLEX_BISON=1 -DHAVE_GTK=1
+DEFS = -DPACKAGE_NAME=\"multi2sim\" -DPACKAGE_TARNAME=\"multi2sim\" -DPACKAGE_VERSION=\"4.2\" -DPACKAGE_STRING=\"multi2sim\ 4.2\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"multi2sim\" -DVERSION=\"4.2\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_STDDEF_H=1 -DHAVE_STDINT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_SOCKET_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_UTIME_H=1 -DHAVE_ELF_H=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_UNISTD_H=1 -DHAVE_CHOWN=1 -DLSTAT_FOLLOWS_SLASHED_SYMLINK=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_ALARM=1 -DHAVE_BZERO=1 -DHAVE_FTRUNCATE=1 -DHAVE_GETCWD=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_MKDIR=1 -DHAVE_MUNMAP=1 -DHAVE_SELECT=1 -DHAVE_SOCKET=1 -DHAVE_STRCASECMP=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRTOL=1 -DHAVE_UTIME=1 -DHAVE_SSE4=1 -DHAVE_SYNC_BUILTINS=1 -DHAVE_GTK=1
 DEPDIR = .deps
 DLLTOOL = false
 DSYMUTIL = 
@@ -189,12 +189,12 @@ DUMPBIN =
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /usr/bin/grep -E
+EGREP = /bin/grep -E
 EXEEXT = 
-FGREP = /usr/bin/grep -F
-GREP = /usr/bin/grep
-GTK_CFLAGS = -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
-GTK_LIBS = -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+FGREP = /bin/grep -F
+GREP = /bin/grep
+GTK_CFLAGS = -pthread -I/usr/include/gtk-3.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng12  
+GTK_LIBS = -lgtk-3 -lgdk-3 -latk-1.0 -lgio-2.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lpango-1.0 -lcairo -lgobject-2.0 -lglib-2.0  
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -202,9 +202,9 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
-LEX = flex
-LEXLIB = -lfl
-LEX_OUTPUT_ROOT = lex.yy
+LEX = :
+LEXLIB = 
+LEX_OUTPUT_ROOT = 
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -216,9 +216,9 @@ LLVM_LIBS =
 LN_S = ln -s
 LTLIBOBJS = 
 M2S_INCLUDES =  -I$(top_srcdir) -I$(top_srcdir)/src 
-MAKEINFO = ${SHELL} /home/bharathi/tools/multi2sim-4.2/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run makeinfo
 MANIFEST_TOOL = :
-MKDIR_P = /usr/bin/mkdir -p
+MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -237,17 +237,17 @@ PATH_SEPARATOR = :
 PKGDATADIR = ${datarootdir}/multi2sim
 PKG_CONFIG = /usr/bin/pkg-config
 RANLIB = ranlib
-SED = /usr/bin/sed
+SED = /bin/sed
 SET_MAKE = 
-SHELL = /bin/sh
+SHELL = /bin/bash
 STRIP = strip
 VERSION = 4.2
-YACC = bison -y
+YACC = yacc
 YFLAGS = 
-abs_builddir = /home/bharathi/tools/multi2sim-4.2/runtime/opencl
-abs_srcdir = /home/bharathi/tools/multi2sim-4.2/runtime/opencl
-abs_top_builddir = /home/bharathi/tools/multi2sim-4.2
-abs_top_srcdir = /home/bharathi/tools/multi2sim-4.2
+abs_builddir = /home/vivek/workspace3/multi2sim_nuca/runtime/opencl
+abs_srcdir = /home/vivek/workspace3/multi2sim_nuca/runtime/opencl
+abs_top_builddir = /home/vivek/workspace3/multi2sim_nuca
+abs_top_srcdir = /home/vivek/workspace3/multi2sim_nuca
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -277,13 +277,13 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/bharathi/tools/multi2sim-4.2/install-sh
+install_sh = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /usr/bin/mkdir -p
+mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr/local
@@ -297,122 +297,122 @@ target_alias =
 top_build_prefix = ../../
 top_builddir = ../..
 top_srcdir = ../..
-#lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-opencl.la
-#__top_builddir__lib_libm2s_opencl_la_LDFLAGS = -version-info 1:0:0 -lpthread -ldl -lrt
-#__top_builddir__lib_libm2s_opencl_la_SOURCES = \
-#	\
-#	command.c \
-#	command.h \
-#	\
-#	command-queue.c \
-#	command-queue.h \
-#	\
-#	context.c \
-#	context.h \
-#	\
-#	debug.c \
-#	debug.h \
-#	\
-#	device.c \
-#	device.h \
-#	\
-#	elf-format.c \
-#	elf-format.h \
-#	\
-#	event.c \
-#	event.h \
-#	\
-#	evg-device.c \
-#	evg-device.h \
-#	\
-#	evg-kernel.c \
-#	evg-kernel.h \
-#	\
-#	evg-program.c \
-#	evg-program.h \
-#	\
-#	list.c \
-#	list.h \
-#	\
-#	mhandle.c \
-#	mhandle.h \
-#	\
-#	misc.c \
-#	misc.h \
-#	\
-#	program.c \
-#	program.h \
-#	\
-#	kernel.c \
-#	kernel.h \
-#	\
-#	mem.c \
-#	mem.h \
-#	\
-#	object.c \
-#	object.h \
-#	\
-#	opencl.c \
-#	opencl.h \
-#	\
-#	platform.c \
-#	platform.h \
-#	\
-#	sampler.c \
-#	sampler.h \
-#	\
-#	si-device.c \
-#	si-device.h \
-#	\
-#	si-kernel.c \
-#	si-kernel.h \
-#	\
-#	si-program.c \
-#	si-program.h \
-#	\
-#	string.c \
-#	string.h \
-#	\
-#	thread-list.c \
-#	thread-list.h \
-#	\
-#	x86-device.c \
-#	x86-device.h \
-#	\
-#	x86-kernel.c \
-#	x86-kernel.h \
-#	\
-#	x86-program.c \
-#	x86-program.h \
-#	\
-#	union-device.c \
-#	union-device.h \
-#	\
-#	union-kernel.c \
-#	union-kernel.h \
-#	\
-#	union-program.c \
-#	union-program.h \
-#	\
-#	partition-strategy.c \
-#	partition-strategy.h \
-#	\
-#	partition-util.c \
-#	partition-util.h \
-#	\
-#	partition-util-time.c \
-#	partition-util-time.h \
-#	\
-#	even-partition-strategy.c \
-#	even-partition-strategy.h \
-#	\
-#	relative-runtime-partition-strategy.c \
-#	relative-runtime-partition-strategy.h \
-#	\
-#	x86-device-wi.s
+lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-opencl.la
+__top_builddir__lib_libm2s_opencl_la_LDFLAGS = -version-info 1:0:0 -lpthread -ldl -lrt
+__top_builddir__lib_libm2s_opencl_la_SOURCES = \
+	\
+	command.c \
+	command.h \
+	\
+	command-queue.c \
+	command-queue.h \
+	\
+	context.c \
+	context.h \
+	\
+	debug.c \
+	debug.h \
+	\
+	device.c \
+	device.h \
+	\
+	elf-format.c \
+	elf-format.h \
+	\
+	event.c \
+	event.h \
+	\
+	evg-device.c \
+	evg-device.h \
+	\
+	evg-kernel.c \
+	evg-kernel.h \
+	\
+	evg-program.c \
+	evg-program.h \
+	\
+	list.c \
+	list.h \
+	\
+	mhandle.c \
+	mhandle.h \
+	\
+	misc.c \
+	misc.h \
+	\
+	program.c \
+	program.h \
+	\
+	kernel.c \
+	kernel.h \
+	\
+	mem.c \
+	mem.h \
+	\
+	object.c \
+	object.h \
+	\
+	opencl.c \
+	opencl.h \
+	\
+	platform.c \
+	platform.h \
+	\
+	sampler.c \
+	sampler.h \
+	\
+	si-device.c \
+	si-device.h \
+	\
+	si-kernel.c \
+	si-kernel.h \
+	\
+	si-program.c \
+	si-program.h \
+	\
+	string.c \
+	string.h \
+	\
+	thread-list.c \
+	thread-list.h \
+	\
+	x86-device.c \
+	x86-device.h \
+	\
+	x86-kernel.c \
+	x86-kernel.h \
+	\
+	x86-program.c \
+	x86-program.h \
+	\
+	union-device.c \
+	union-device.h \
+	\
+	union-kernel.c \
+	union-kernel.h \
+	\
+	union-program.c \
+	union-program.h \
+	\
+	partition-strategy.c \
+	partition-strategy.h \
+	\
+	partition-util.c \
+	partition-util.h \
+	\
+	partition-util-time.c \
+	partition-util-time.h \
+	\
+	even-partition-strategy.c \
+	even-partition-strategy.h \
+	\
+	relative-runtime-partition-strategy.c \
+	relative-runtime-partition-strategy.h \
+	\
+	x86-device-wi.s
 
-#AM_CFLAGS = -m32 -D_GNU_SOURCE
-#AM_CCASFLAGS = -m32
+AM_CFLAGS = -m32 -D_GNU_SOURCE
+AM_CCASFLAGS = -m32
 all: all-am
 
 .SUFFIXES:
