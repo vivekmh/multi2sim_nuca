@@ -116,7 +116,8 @@ int EV_MOD_NMOESI_MESSAGE_ACTION;
 int EV_MOD_NMOESI_MESSAGE_REPLY;
 int EV_MOD_NMOESI_MESSAGE_FINISH;
 
-int cache_to_cache_transfers = 0;
+int cache_to_cache_transfers;
+
 
 
 
@@ -1165,20 +1166,28 @@ void mod_handler_nmoesi_find_and_lock(int event, void *data)
 		 * Also, update LRU counters here. */
 		cache_set_transient_tag(mod->cache, stack->set, stack->way, stack->tag);
 		cache_access_block(mod->cache, stack->set, stack->way);
-		//VMH
-		struct mod_t *parent_mod;
 
+		//VMH
+		//struct mod_t *parent_mod;
 		/* Get high/parent module */
-		parent_mod = linked_list_get(mod->high_mod_list);
+		//parent_mod = linked_list_get(mod->high_mod_list);
+		//printf("%s", mod->high_mod_list->current->data);
+		//printf("Mod name %s, Parent mod name %s remote_flag %d\n", mod->name,
+				//mod->parent_name,stack->remote_flag);
 
 		//Also update remote_flag here
-		if(stack->hit && !strncmp((const char*)(&mod->name),"mod-l2",6))
+		char *ret;
+		ret = strstr((const char*)(&mod->name),"l2");
+		if(ret)
+		printf("ret string is %s",ret);
+
+		if(stack->hit && ret)
 		{
 			int len = strlen((const char*)(&mod->name));
-			int len_upper = strlen((const char*)(&parent_mod->name));
+			int len_upper = strlen((const char*)(&mod->parent_name));
 
 			const char *last_two = (const char*)(&mod->name[len-2]);
-			const char *last_two_upper = (const char*)(&parent_mod->name[len_upper-2]);
+			const char *last_two_upper = (const char*)(&mod->parent_name[len_upper-2]);
 
 			if(strcmp(last_two,last_two_upper))
 				{
@@ -1186,7 +1195,7 @@ void mod_handler_nmoesi_find_and_lock(int event, void *data)
 				stack->remote_flag = 1;
 				}
 
-			printf("Mod name %s, Parent mod name %s remote_flag %d\n", mod->name, parent_mod->name,
+			printf("Mod name %s, Parent mod name %s remote_flag %d\n", mod->name, mod->parent_name,
 					stack->remote_flag);
 		}
 		//VMH
@@ -1698,6 +1707,8 @@ void mod_handler_nmoesi_read_request(int event, void *data)
 		/* Find and lock */
 		new_stack = mod_stack_create(stack->id, target_mod, stack->addr,
 			EV_MOD_NMOESI_READ_REQUEST_ACTION, stack);
+		new_stack->mod->parent_name = stack->request_dir == mod_request_up_down?
+				mod->name:NULL;
 		new_stack->blocking = stack->request_dir == mod_request_down_up;
 		new_stack->read = 1;
 		new_stack->retry = 0;
@@ -2343,6 +2354,8 @@ void mod_handler_nmoesi_write_request(int event, void *data)
 		/* Find and lock */
 		new_stack = mod_stack_create(stack->id, target_mod, stack->addr,
 			EV_MOD_NMOESI_WRITE_REQUEST_ACTION, stack);
+		new_stack->mod->parent_name = stack->request_dir == mod_request_up_down?
+						mod->name:NULL;
 		new_stack->blocking = stack->request_dir == mod_request_down_up;
 		new_stack->write = 1;
 		new_stack->retry = 0;
