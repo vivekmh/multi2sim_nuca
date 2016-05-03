@@ -60,7 +60,7 @@ void mod_stack_return(struct mod_stack_t *stack)
 	int ret_event = stack->ret_event;
 	void *ret_stack = stack->ret_stack;
 	//VMH
-		int remote_flag = stack->remote_flag;
+	int remote_flag = stack->remote_flag;
 
 	/* Wake up dependent accesses */
 	mod_stack_wakeup_stack(stack);

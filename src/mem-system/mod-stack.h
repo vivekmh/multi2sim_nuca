@@ -112,7 +112,7 @@ struct mod_stack_t
 	int retry : 1;
 	int coalesced : 1;
 	int port_locked : 1;
-	int remote_flag : 1;
+	unsigned int remote_flag : 1;
 
 	/* Message sent through interconnect */
 	struct net_msg_t *msg;

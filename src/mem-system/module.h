@@ -93,6 +93,7 @@ struct mod_t
 	int dir_latency;
 	int mshr_size;
 
+
 	/* Module level starting from entry points */
 	int level;
 
