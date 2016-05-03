@@ -1,5 +1,5 @@
 [ General ]
-Cores = 4
+Cores = 8
 Threads = 1
 #FastForward = 1000000000
 FastForward = 50000000
