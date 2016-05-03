@@ -1,9 +1,8 @@
-outer-bin.o: outer-bin.c /usr/include/stdc-predef.h \
- ../../src/lib/mhandle/mhandle.h /usr/include/stdlib.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h \
+outer-bin.o: outer-bin.c ../../src/lib/mhandle/mhandle.h \
+ /usr/include/stdlib.h /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/byteswap.h /usr/include/bits/types.h \
@@ -16,21 +15,22 @@ outer-bin.o: outer-bin.c /usr/include/stdc-predef.h \
  /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
  /usr/include/bits/string2.h ../../src/lib/util/elf-encode.h \
  /usr/include/elf.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/stdio.h \
- /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/bits/auxv.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h ../../src/lib/util/list.h \
  ../../src/lib/util/string.h outer-bin.h inner-bin.h
-
-/usr/include/stdc-predef.h:
 
 ../../src/lib/mhandle/mhandle.h:
 
 /usr/include/stdlib.h:
 
 /usr/include/features.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -40,7 +40,7 @@ outer-bin.o: outer-bin.c /usr/include/stdc-predef.h \
 
 /usr/include/gnu/stubs-64.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -92,11 +92,13 @@ outer-bin.o: outer-bin.c /usr/include/stdc-predef.h \
 
 /usr/include/elf.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
 /usr/include/bits/wchar.h:
+
+/usr/include/bits/auxv.h:
 
 /usr/include/stdio.h:
 
@@ -106,7 +108,7 @@ outer-bin.o: outer-bin.c /usr/include/stdc-predef.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 

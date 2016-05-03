@@ -1,22 +1,17 @@
-tex-engine.o: tex-engine.c /usr/include/stdc-predef.h \
- ../../../../src/arch/evergreen/emu/ndrange.h /usr/include/stdio.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- ../../../../src/arch/evergreen/emu/wavefront.h \
+tex-engine.o: tex-engine.c ../../../../src/arch/evergreen/emu/ndrange.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h ../../../../src/arch/evergreen/emu/wavefront.h \
  ../../../../src/arch/evergreen/asm/asm.h \
  ../../../../src/lib/util/elf-format.h /usr/include/elf.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/auxv.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/bits/auxv.h \
  ../../../../src/arch/evergreen/asm/asm.dat \
  ../../../../src/arch/evergreen/emu/work-group.h \
  ../../../../src/lib/esim/trace.h ../../../../src/lib/util/linked-list.h \
@@ -27,27 +22,27 @@ tex-engine.o: tex-engine.c /usr/include/stdc-predef.h \
  /usr/include/assert.h instruction-interval-report.h \
  cycle-interval-report.h tex-engine.h
 
-/usr/include/stdc-predef.h:
-
 ../../../../src/arch/evergreen/emu/ndrange.h:
 
 /usr/include/stdio.h:
 
 /usr/include/features.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/usr/include/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/usr/include/gnu/stubs.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/include/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
 
 /usr/include/libio.h:
 
@@ -55,11 +50,13 @@ tex-engine.o: tex-engine.c /usr/include/stdc-predef.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/bits/stdio_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
 
 ../../../../src/arch/evergreen/emu/wavefront.h:
 
@@ -69,13 +66,13 @@ tex-engine.o: tex-engine.c /usr/include/stdc-predef.h \
 
 /usr/include/elf.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/bits/wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/auxv.h:
+/usr/include/bits/auxv.h:
 
 ../../../../src/arch/evergreen/asm/asm.dat:
 

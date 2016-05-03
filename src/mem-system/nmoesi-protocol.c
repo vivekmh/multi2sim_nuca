@@ -1196,9 +1196,9 @@ void mod_handler_nmoesi_find_and_lock(int event, void *data)
 			const char *last_two = (const char*)(&mod->name[len+2]);
 			const char *last_two_upper = (const char*)(&mod->parent_name[len_upper+2]);
 
-			printf("mod last two is %s and parent last two is %s\n", last_two, last_two_upper);
-			printf("mod last two is %d and parent last two is %d\n", len+2, len_upper+2);
-			if(strcmp(last_two,last_two_upper))
+			//printf("mod last two is %s and parent last two is %s\n", last_two, last_two_upper);
+			//printf("mod last two is %d and parent last two is %d\n", len+2, len_upper+2);
+			if(strcmp(last_two,last_two_upper)!=0)
 				{
 				cache_to_cache_transfers++;
 				stack->remote_flag = 1;
@@ -1206,8 +1206,7 @@ void mod_handler_nmoesi_find_and_lock(int event, void *data)
 			else
 				stack->remote_flag = 0;
 
-			printf("Mod name %s, Parent mod name %s remote_flag %u\n", mod->name, mod->parent_name,
-					stack->remote_flag);
+			//printf("Mod name %s, Parent mod name %s remote_flag %u\n", mod->name, mod->parent_name,stack->remote_flag);
 		}
 		//VMH
 

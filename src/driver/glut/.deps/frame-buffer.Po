@@ -1,11 +1,12 @@
-frame-buffer.o: frame-buffer.c /usr/include/stdc-predef.h \
- /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
- /usr/include/GL/gl.h /usr/include/GL/glext.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h \
- /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
+frame-buffer.o: frame-buffer.c /usr/include/GL/glut.h \
+ /usr/include/GL/freeglut_std.h /usr/include/GL/gl.h \
+ /usr/include/GL/glext.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/inttypes.h /usr/include/features.h \
+ /usr/include/stdc-predef.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/GL/glu.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/endian.h \
@@ -21,14 +22,12 @@ frame-buffer.o: frame-buffer.c /usr/include/stdc-predef.h \
  /usr/include/bits/string2.h ../../../src/lib/util/misc.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h ../../../src/lib/util/debug.h frame-buffer.h \
  glut.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/bits/sched.h /usr/include/bits/setjmp.h \
  ../../../src/lib/util/class.h /usr/include/assert.h
-
-/usr/include/stdc-predef.h:
 
 /usr/include/GL/glut.h:
 
@@ -38,11 +37,13 @@ frame-buffer.o: frame-buffer.c /usr/include/stdc-predef.h \
 
 /usr/include/GL/glext.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/inttypes.h:
 
 /usr/include/features.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -52,7 +53,7 @@ frame-buffer.o: frame-buffer.c /usr/include/stdc-predef.h \
 
 /usr/include/gnu/stubs-64.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -120,7 +121,7 @@ frame-buffer.o: frame-buffer.c /usr/include/stdc-predef.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 

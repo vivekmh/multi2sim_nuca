@@ -1,18 +1,18 @@
-opengl.o: opengl.c /usr/include/stdc-predef.h \
- ../../../src/arch/x86/emu/context.h /usr/include/pthread.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
+opengl.o: opengl.c ../../../src/arch/x86/emu/context.h \
+ /usr/include/pthread.h /usr/include/features.h \
+ /usr/include/stdc-predef.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h /usr/include/endian.h \
  /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/byteswap-16.h /usr/include/sched.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
  /usr/include/time.h /usr/include/bits/sched.h /usr/include/bits/time.h \
  /usr/include/xlocale.h /usr/include/bits/pthreadtypes.h \
  /usr/include/bits/setjmp.h ../../../src/arch/x86/asm/asm.h \
  ../../../src/arch/common/asm.h /usr/include/stdio.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h ../../../src/lib/util/class.h \
  /usr/include/assert.h ../../../src/arch/x86/asm/inst.h \
@@ -21,8 +21,8 @@ opengl.o: opengl.c /usr/include/stdc-predef.h \
  ../../../src/arch/southern-islands/emu/ndrange.h \
  ../../../src/arch/southern-islands/asm/bin-file.h \
  ../../../src/lib/util/elf-format.h /usr/include/elf.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/bits/auxv.h \
  ../../../src/arch/southern-islands/emu/emu.h \
  ../../../src/arch/common/emu.h \
  ../../../src/arch/southern-islands/emu/opengl-bin-file.h \
@@ -40,13 +40,13 @@ opengl.o: opengl.c /usr/include/stdc-predef.h \
  ../../../src/lib/util/misc.h ../../../src/mem-system/memory.h opengl.h \
  si-program.h si-shader.h opengl.dat
 
-/usr/include/stdc-predef.h:
-
 ../../../src/arch/x86/emu/context.h:
 
 /usr/include/pthread.h:
 
 /usr/include/features.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -70,7 +70,7 @@ opengl.o: opengl.c /usr/include/stdc-predef.h \
 
 /usr/include/sched.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/time.h:
 
@@ -96,7 +96,7 @@ opengl.o: opengl.c /usr/include/stdc-predef.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -124,11 +124,13 @@ opengl.o: opengl.c /usr/include/stdc-predef.h \
 
 /usr/include/elf.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
 /usr/include/bits/wchar.h:
+
+/usr/include/bits/auxv.h:
 
 ../../../src/arch/southern-islands/emu/emu.h:
 

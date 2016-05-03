@@ -1,22 +1,16 @@
-inst-queue.o: inst-queue.c /usr/include/stdc-predef.h \
- ../../../../src/lib/util/linked-list.h core.h \
+inst-queue.o: inst-queue.c ../../../../src/lib/util/linked-list.h core.h \
  ../../../../src/arch/x86/emu/uinst.h ../../../../src/lib/util/class.h \
- /usr/include/assert.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- ../../../../src/mem-system/prefetch-history.h cpu.h \
- ../../../../src/arch/common/timing.h inst-queue.h uop.h thread.h
-
-/usr/include/stdc-predef.h:
+ /usr/include/assert.h /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/stdio.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h ../../../../src/mem-system/prefetch-history.h \
+ cpu.h ../../../../src/arch/common/timing.h inst-queue.h uop.h thread.h
 
 ../../../../src/lib/util/linked-list.h:
 
@@ -30,21 +24,23 @@ core.h:
 
 /usr/include/features.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/usr/include/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
 
 /usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/bits/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/bits/typesizes.h:
 
 /usr/include/libio.h:
 
@@ -52,11 +48,13 @@ core.h:
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/bits/stdio_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
 
 ../../../../src/mem-system/prefetch-history.h:
 

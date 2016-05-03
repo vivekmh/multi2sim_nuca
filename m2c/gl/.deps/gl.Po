@@ -1,10 +1,10 @@
-gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
- /usr/include/X11/Xlib.h /usr/include/sys/types.h /usr/include/features.h \
- /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/time.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h \
+gl.o: gl.c /usr/include/GL/glx.h /usr/include/X11/Xlib.h \
+ /usr/include/sys/types.h /usr/include/features.h \
+ /usr/include/stdc-predef.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/time.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
  /usr/include/sys/select.h /usr/include/bits/select.h \
@@ -14,7 +14,7 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
  /usr/include/X11/Xosdefs.h /usr/include/X11/Xutil.h \
  /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/GL/glxext.h \
  /usr/include/sys/stat.h /usr/include/bits/stat.h /usr/include/assert.h \
  ../../src/lib/mhandle/mhandle.h /usr/include/stdlib.h \
@@ -25,13 +25,11 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
  /usr/include/bits/string2.h ../../src/lib/util/debug.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h ../../src/lib/util/elf-format.h \
- /usr/include/elf.h ../../src/lib/util/list.h ../../src/lib/util/misc.h \
- ../../src/lib/util/string.h gl.h
-
-/usr/include/stdc-predef.h:
+ /usr/include/elf.h /usr/include/bits/auxv.h ../../src/lib/util/list.h \
+ ../../src/lib/util/misc.h ../../src/lib/util/string.h gl.h
 
 /usr/include/GL/glx.h:
 
@@ -40,6 +38,8 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
 /usr/include/sys/types.h:
 
 /usr/include/features.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -55,7 +55,7 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
 
 /usr/include/time.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/endian.h:
 
@@ -95,7 +95,7 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
 
 /usr/include/inttypes.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -141,7 +141,7 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -152,6 +152,8 @@ gl.o: gl.c /usr/include/stdc-predef.h /usr/include/GL/glx.h \
 ../../src/lib/util/elf-format.h:
 
 /usr/include/elf.h:
+
+/usr/include/bits/auxv.h:
 
 ../../src/lib/util/list.h:
 

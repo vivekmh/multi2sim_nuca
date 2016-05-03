@@ -1,10 +1,10 @@
-si2bin.o: si2bin.c /usr/include/stdc-predef.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h \
+si2bin.o: si2bin.c \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
  ../../src/lib/mhandle/mhandle.h /usr/include/stdlib.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h \
+ /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/byteswap.h /usr/include/bits/types.h \
@@ -20,22 +20,22 @@ si2bin.o: si2bin.c /usr/include/stdc-predef.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
  ../../src/lib/util/elf-encode.h /usr/include/elf.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/bits/auxv.h \
  ../../src/lib/util/list.h inst-info.h \
  ../../src/arch/southern-islands/asm/asm.h \
  ../../src/arch/southern-islands/asm/asm.dat outer-bin.h inner-bin.h \
  metadata.h si2bin.h symbol.h task.h
 
-/usr/include/stdc-predef.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
 ../../src/lib/mhandle/mhandle.h:
 
 /usr/include/stdlib.h:
 
 /usr/include/features.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -45,7 +45,7 @@ si2bin.o: si2bin.c /usr/include/stdc-predef.h \
 
 /usr/include/gnu/stubs-64.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -113,11 +113,13 @@ si2bin.o: si2bin.c /usr/include/stdc-predef.h \
 
 /usr/include/elf.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
 /usr/include/bits/wchar.h:
+
+/usr/include/bits/auxv.h:
 
 ../../src/lib/util/list.h:
 

@@ -85,17 +85,17 @@ am____top_builddir__lib_libm2s_opengl_la_SOURCES_DIST = api.c api.h \
 	shader.h state.c state.h string.c string.h sync.c sync.h \
 	texture.c texture.h vertex-array.c vertex-array.h \
 	vertex-spec.c vertex-spec.h viewport.c viewport.h
-am___top_builddir__lib_libm2s_opengl_la_OBJECTS =  \
-	api.lo buffer.lo context.lo debug.lo \
-	elf-format.lo fog-hint.lo framebuffer.lo \
-	fragment.lo light.lo linked-list.lo \
-	list.lo matrix.lo mhandle.lo misc.lo \
-	opengl.lo pixel.lo program.lo \
-	rasterization.lo rectangle.lo \
-	render-ctrl-query.lo special-func.lo \
-	shader.lo state.lo string.lo sync.lo \
-	texture.lo vertex-array.lo vertex-spec.lo \
-	viewport.lo
+#am___top_builddir__lib_libm2s_opengl_la_OBJECTS =  \
+#	api.lo buffer.lo context.lo debug.lo \
+#	elf-format.lo fog-hint.lo framebuffer.lo \
+#	fragment.lo light.lo linked-list.lo \
+#	list.lo matrix.lo mhandle.lo misc.lo \
+#	opengl.lo pixel.lo program.lo \
+#	rasterization.lo rectangle.lo \
+#	render-ctrl-query.lo special-func.lo \
+#	shader.lo state.lo string.lo sync.lo \
+#	texture.lo vertex-array.lo vertex-spec.lo \
+#	viewport.lo
 __top_builddir__lib_libm2s_opengl_la_OBJECTS =  \
 	$(am___top_builddir__lib_libm2s_opengl_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
@@ -106,8 +106,8 @@ __top_builddir__lib_libm2s_opengl_la_LINK = $(LIBTOOL) $(AM_V_lt) \
 	$(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(__top_builddir__lib_libm2s_opengl_la_LDFLAGS) $(LDFLAGS) -o \
 	$@
-am___top_builddir__lib_libm2s_opengl_la_rpath =  \
-	-rpath $(libdir)
+#am___top_builddir__lib_libm2s_opengl_la_rpath =  \
+#	-rpath $(libdir)
 am__dirstamp = $(am__leading_dot)dirstamp
 DEFAULT_INCLUDES = 
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -141,20 +141,20 @@ DIST_SOURCES =  \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/parth014/multi2sim_nuca/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run automake-1.11
-AWK = mawk
+AUTOCONF = ${SHELL} /home/parth014/multi2sim_nuca/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/parth014/multi2sim_nuca/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/parth014/multi2sim_nuca/missing --run automake-1.11
+AWK = gawk
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=gcc3
 CCASFLAGS = -g -O2
 CCDEPMODE = depmode=gcc3
-CFLAGS = -msse2 -Wall -Werror -DMHANDLE -g -O0 -std=gnu99 -Wno-error=deprecated-declarations
+CFLAGS = -msse2 -O3 -std=gnu99 -DNDEBUG
 CPP = gcc -E
 CPPFLAGS = 
 CXX = g++
@@ -163,7 +163,7 @@ CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
 DATADIR = ${prefix}/share
-DEFS = -DPACKAGE_NAME=\"multi2sim\" -DPACKAGE_TARNAME=\"multi2sim\" -DPACKAGE_VERSION=\"4.2\" -DPACKAGE_STRING=\"multi2sim\ 4.2\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"multi2sim\" -DVERSION=\"4.2\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_STDDEF_H=1 -DHAVE_STDINT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_SOCKET_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_UTIME_H=1 -DHAVE_ELF_H=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_UNISTD_H=1 -DHAVE_CHOWN=1 -DLSTAT_FOLLOWS_SLASHED_SYMLINK=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_ALARM=1 -DHAVE_BZERO=1 -DHAVE_FTRUNCATE=1 -DHAVE_GETCWD=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_MKDIR=1 -DHAVE_MUNMAP=1 -DHAVE_SELECT=1 -DHAVE_SOCKET=1 -DHAVE_STRCASECMP=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRTOL=1 -DHAVE_UTIME=1 -DHAVE_SSE4=1 -DHAVE_SYNC_BUILTINS=1 -DHAVE_GTK=1
+DEFS = -DPACKAGE_NAME=\"multi2sim\" -DPACKAGE_TARNAME=\"multi2sim\" -DPACKAGE_VERSION=\"4.2\" -DPACKAGE_STRING=\"multi2sim\ 4.2\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"multi2sim\" -DVERSION=\"4.2\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DSTDC_HEADERS=1 -DHAVE_SYS_WAIT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_FLOAT_H=1 -DHAVE_STDDEF_H=1 -DHAVE_STDINT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_IOCTL_H=1 -DHAVE_SYS_SOCKET_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_UTIME_H=1 -DHAVE_ELF_H=1 -DHAVE_STRUCT_STAT_ST_BLKSIZE=1 -DHAVE_STRUCT_STAT_ST_BLOCKS=1 -DHAVE_ST_BLOCKS=1 -DHAVE_STRUCT_STAT_ST_RDEV=1 -DHAVE_UNISTD_H=1 -DHAVE_CHOWN=1 -DLSTAT_FOLLOWS_SLASHED_SYMLINK=1 -DHAVE_STDLIB_H=1 -DHAVE_MALLOC=1 -DHAVE_STDLIB_H=1 -DHAVE_UNISTD_H=1 -DHAVE_SYS_PARAM_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_MMAP=1 -DHAVE_STDLIB_H=1 -DHAVE_REALLOC=1 -DHAVE_ALARM=1 -DHAVE_BZERO=1 -DHAVE_FTRUNCATE=1 -DHAVE_GETCWD=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_MKDIR=1 -DHAVE_MUNMAP=1 -DHAVE_SELECT=1 -DHAVE_SOCKET=1 -DHAVE_STRCASECMP=1 -DHAVE_STRCHR=1 -DHAVE_STRDUP=1 -DHAVE_STRNCASECMP=1 -DHAVE_STRTOL=1 -DHAVE_UTIME=1 -DHAVE_SSE4=1 -DHAVE_SYNC_BUILTINS=1 -DHAVE_OPENGL=1 -DYYTEXT_POINTER=1 -DHAVE_FLEX_BISON=1
 DEPDIR = .deps
 DLLTOOL = false
 DSYMUTIL = 
@@ -175,8 +175,8 @@ EGREP = /bin/grep -E
 EXEEXT = 
 FGREP = /bin/grep -F
 GREP = /bin/grep
-GTK_CFLAGS = -pthread -I/usr/include/gtk-3.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng12  
-GTK_LIBS = -lgtk-3 -lgdk-3 -latk-1.0 -lgio-2.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lpango-1.0 -lcairo -lgobject-2.0 -lglib-2.0  
+GTK_CFLAGS = 
+GTK_LIBS = 
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -184,9 +184,9 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
-LEX = :
-LEXLIB = 
-LEX_OUTPUT_ROOT = 
+LEX = flex
+LEXLIB = -lfl
+LEX_OUTPUT_ROOT = lex.yy
 LIBOBJS = 
 LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
@@ -198,7 +198,7 @@ LLVM_LIBS =
 LN_S = ln -s
 LTLIBOBJS = 
 M2S_INCLUDES =  -I$(top_srcdir) -I$(top_srcdir)/src 
-MAKEINFO = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/parth014/multi2sim_nuca/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -221,15 +221,15 @@ PKG_CONFIG = /usr/bin/pkg-config
 RANLIB = ranlib
 SED = /bin/sed
 SET_MAKE = 
-SHELL = /bin/bash
+SHELL = /bin/sh
 STRIP = strip
 VERSION = 4.2
-YACC = yacc
+YACC = bison -y
 YFLAGS = 
-abs_builddir = /home/vivek/workspace3/multi2sim_nuca/runtime/opengl
-abs_srcdir = /home/vivek/workspace3/multi2sim_nuca/runtime/opengl
-abs_top_builddir = /home/vivek/workspace3/multi2sim_nuca
-abs_top_srcdir = /home/vivek/workspace3/multi2sim_nuca
+abs_builddir = /home/parth014/multi2sim_nuca/runtime/opengl
+abs_srcdir = /home/parth014/multi2sim_nuca/runtime/opengl
+abs_top_builddir = /home/parth014/multi2sim_nuca
+abs_top_srcdir = /home/parth014/multi2sim_nuca
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -259,7 +259,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/vivek/workspace3/multi2sim_nuca/install-sh
+install_sh = ${SHELL} /home/parth014/multi2sim_nuca/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -279,97 +279,97 @@ target_alias =
 top_build_prefix = ../../
 top_builddir = ../..
 top_srcdir = ../..
-lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-opengl.la
-__top_builddir__lib_libm2s_opengl_la_LDFLAGS = -version-info 1:0:0
-__top_builddir__lib_libm2s_opengl_la_SOURCES = \
-	api.c \
-	api.h \
-	\
-	buffer.c \
-	buffer.h \
-	\
-	context.c \
-	context.h \
-	\
-	debug.c \
-	debug.h \
-	\
-	elf-format.c \
-	elf-format.h \
-	\
-	fog-hint.c \
-	fog-hint.h \
-	\
-	framebuffer.c \
-	framebuffer.h \
-	\
-	fragment.c \
-	fragment.h \
-	\
-	light.c \
-	light.h \
-	\
-	linked-list.c \
-	linked-list.h \
-	\
-	list.c \
-	list.h \
-	\
-	matrix.c \
-	matrix.h \
-	\
-	mhandle.c \
-	mhandle.h \
-	\
-	misc.c \
-	misc.h \
-	\
-	opengl.c \
-	opengl.h \
-	\
-	pixel.c \
-	pixel.h \
-	\
-	program.c \
-	program.h \
-	\
-	rasterization.c \
-	rasterization.h \
-	\
-	rectangle.c \
-	rectangle.h \
-	\
-	render-ctrl-query.c \
-	render-ctrl-query.h \
-	\
-	special-func.c \
-	special-func.h \
-	\
-	shader.c \
-	shader.h \
-	\
-	state.c \
-	state.h \
-	\
-	string.c \
-	string.h \
-	\
-	sync.c \
-	sync.h \
-	\
-	texture.c \
-	texture.h \
-	\
-	vertex-array.c \
-	vertex-array.h \
-	\
-	vertex-spec.c \
-	vertex-spec.h \
-	\
-	viewport.c \
-	viewport.h
+#lib_LTLIBRARIES = $(top_builddir)/lib/libm2s-opengl.la
+#__top_builddir__lib_libm2s_opengl_la_LDFLAGS = -version-info 1:0:0
+#__top_builddir__lib_libm2s_opengl_la_SOURCES = \
+#	api.c \
+#	api.h \
+#	\
+#	buffer.c \
+#	buffer.h \
+#	\
+#	context.c \
+#	context.h \
+#	\
+#	debug.c \
+#	debug.h \
+#	\
+#	elf-format.c \
+#	elf-format.h \
+#	\
+#	fog-hint.c \
+#	fog-hint.h \
+#	\
+#	framebuffer.c \
+#	framebuffer.h \
+#	\
+#	fragment.c \
+#	fragment.h \
+#	\
+#	light.c \
+#	light.h \
+#	\
+#	linked-list.c \
+#	linked-list.h \
+#	\
+#	list.c \
+#	list.h \
+#	\
+#	matrix.c \
+#	matrix.h \
+#	\
+#	mhandle.c \
+#	mhandle.h \
+#	\
+#	misc.c \
+#	misc.h \
+#	\
+#	opengl.c \
+#	opengl.h \
+#	\
+#	pixel.c \
+#	pixel.h \
+#	\
+#	program.c \
+#	program.h \
+#	\
+#	rasterization.c \
+#	rasterization.h \
+#	\
+#	rectangle.c \
+#	rectangle.h \
+#	\
+#	render-ctrl-query.c \
+#	render-ctrl-query.h \
+#	\
+#	special-func.c \
+#	special-func.h \
+#	\
+#	shader.c \
+#	shader.h \
+#	\
+#	state.c \
+#	state.h \
+#	\
+#	string.c \
+#	string.h \
+#	\
+#	sync.c \
+#	sync.h \
+#	\
+#	texture.c \
+#	texture.h \
+#	\
+#	vertex-array.c \
+#	vertex-array.h \
+#	\
+#	vertex-spec.c \
+#	vertex-spec.h \
+#	\
+#	viewport.c \
+#	viewport.h
 
-AM_CFLAGS = -m32
+#AM_CFLAGS = -m32
 all: all-am
 
 .SUFFIXES:

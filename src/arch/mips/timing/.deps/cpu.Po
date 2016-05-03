@@ -1,20 +1,14 @@
-cpu.o: cpu.c /usr/include/stdc-predef.h ../../../../src/lib/util/misc.h \
- /usr/include/stdio.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h cpu.h \
- ../../../../src/arch/common/timing.h ../../../../src/lib/util/class.h \
- /usr/include/assert.h
-
-/usr/include/stdc-predef.h:
+cpu.o: cpu.c ../../../../src/lib/util/misc.h /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h cpu.h ../../../../src/arch/common/timing.h \
+ ../../../../src/lib/util/class.h /usr/include/assert.h
 
 ../../../../src/lib/util/misc.h:
 
@@ -22,19 +16,21 @@ cpu.o: cpu.c /usr/include/stdc-predef.h ../../../../src/lib/util/misc.h \
 
 /usr/include/features.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/stdc-predef.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/usr/include/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+/usr/include/gnu/stubs.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/include/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
 
 /usr/include/libio.h:
 
@@ -42,11 +38,13 @@ cpu.o: cpu.c /usr/include/stdc-predef.h ../../../../src/lib/util/misc.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/soft/gcc-4.5.2/ubuntuamd1/lib/gcc/x86_64-unknown-linux-gnu/4.5.2/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/bits/stdio_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
 
 cpu.h:
 
